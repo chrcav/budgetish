@@ -1,4 +1,4 @@
-# JavaScript Node CircleCI 2.0 configuration file
+# JavaScript Node CircleCI 2.1 configuration file
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
@@ -8,13 +8,8 @@ orbs:
 jobs:
   build:
     docker:
-      # specify the version you desire here
-      - image: circleci/node:13.7.0
+      - image: circleci/node
 
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/mongo:3.4.4
 
     working_directory: ~/repo
 
@@ -39,7 +34,7 @@ jobs:
       - run: CI=true npm test
   deploy:
     docker:
-      - image: circleci/node:13.7.0
+      - image: circleci/node
     working_directory: ~/repo
     steps:
       - checkout
