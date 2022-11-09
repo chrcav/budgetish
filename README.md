@@ -1,6 +1,6 @@
 # Budgetish Financial tracker
 
-Built using ReactJS as an educational exercise. Example of this code running can be found [here](https://budgetish.firebaseapp.com/). I wanted a simpler way to track budget information that didn't require logging into everyone of my accounts in order to use. 
+Built using ReactJS as an educational exercise. I wanted a simpler way to track budget information that didn't require logging into everyone of my accounts in order to use.
 
 ## Requirements
 
